@@ -1,0 +1,21 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "readbank-ttest-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/readbankTtest/ReadbankTtestWebPart.js",
+          "manifest": "./src/webparts/readbankTtest/ReadbankTtestWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "vue": "./node_modules/vue/dist/vue.min.js"
+  },
+  "localizedResources": {
+    "ReadbankTtestWebPartStrings": "lib/webparts/readbankTtest/loc/{locale}.js",
+    "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js"
+  }
+}
